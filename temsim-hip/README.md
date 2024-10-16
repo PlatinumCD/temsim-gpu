@@ -13,8 +13,7 @@ Steps:
 3. Install HIPIFY
 4. Practice using HIPIFY on basic CUDA cuda. Make sure the converted code runs on an AMD GPU on
    an NIC system. (Reach out to Erik if you need resources/permissions)
-5. Build and run `temsim-gpu/temsim-cuda` on a NVIDIA GPU to understand the build process. (I will work on making sure this
-   directory has data and a good README)
+5. Build and run `temsim-gpu/temsim-cuda` on a NVIDIA GPU to understand the build process. (I will work on making sure `temsim-gpu/temsim-cuda` has input files and a good README)
 6. Port Temsim to HIP and make sure you get same output (optimize later)
-7. Make a pull request to master
+7. Make a pull request to main
 8. Optimize performance
