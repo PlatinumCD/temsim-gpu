@@ -1,0 +1,19 @@
+
+Animation of multislice:
+
+autoslice can produce an animation (or movie) of the magnitude of the wave passing through the specimen.
+
+1. First run autoslice in animation mode (one of the initial questions). This will produce a sequence of
+image files slice00000.tif, slice00001.tif,... etc. for each slice. This may be slow and use a lot of
+disk space.
+
+2. Next run autoslicAnimate.py (in python) to read in these slice*.tif files and produce an animation.
+This may also take significant computer time. All of the images in the series are displayed on the 
+same scale so the intensity of different slices can be compared. It defaults to mp4 format (can be 
+modified for .gif format). python actually uses Imagemagick which must also be installed. Imagemagick
+include ffmpeg to actually calculate the mp4 mpeg animation.
+ 
+Note: There is an assumption that the files are read in the correct order (slice00000.tif, slice00001.tif,etc)
+which usually works but may not be guaranteed in all operating systems.
+
+ejk july 2021
