@@ -47,10 +47,8 @@ pushd temsim-cuda > /dev/null
         exit 1
     fi
 
-
     mkdir build
     pushd build > /dev/null
-        
         cmake -DFFTW_DIR=$FFTW_INSTALL_DIR ..
         make -j $NUM_THREADS
     popd

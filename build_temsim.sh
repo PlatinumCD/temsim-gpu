@@ -29,7 +29,7 @@ else
     echo "FFTW is already installed in $FFTW_INSTALL_DIR. Skipping installation."
 fi
 
-# Navigate to temsim-gpu/temsim-cuda directory
+# Navigate to temsim-gpu/temsim directory
 pushd temsim > /dev/null
     if [ $? -eq 0 ]; then
         echo -e "Navigated to \033[32mtemsim-gpu/temsim\033[0m directory."
@@ -38,12 +38,9 @@ pushd temsim > /dev/null
         exit 1
     fi
 
-
     mkdir build
     pushd build > /dev/null
-        
         cmake -DFFTW_DIR=$FFTW_INSTALL_DIR ..
         make -j $NUM_THREADS
-
     popd
 popd
