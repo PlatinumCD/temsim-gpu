@@ -22,6 +22,8 @@ Build `temsim` using the script `build_temsim.sh`:
 
 This file will install FFTW locally and build temsim for the CPU. The executables will be located at `temsim/build`.
 
+**Tested on NIC Saturn**
+
 ### `temsim-cuda`
 
 Build `temsim-cuda` using the script `build_temsim-cuda.sh`:
@@ -30,6 +32,8 @@ Build `temsim-cuda` using the script `build_temsim-cuda.sh`:
 ```
 
 This file will install FFTW locally and build temsim for NVIDIA GPUs (assuming compute capability 80). The executables will be located at `temsim-cuda/build`.
+
+**Tested on NIC Saturn**
 
 ## License
 
